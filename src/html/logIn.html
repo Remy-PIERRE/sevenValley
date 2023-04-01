@@ -10,13 +10,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/90e8e7ef0d.js"
       crossorigin="anonymous"
     ></script>
     <link
       rel="stylesheet"
-      href="../style/style.css"
+      href="../../dist/style.css"
     />
     <title>Log In</title>
     <meta
@@ -26,26 +30,30 @@
   </head>
   <body>
     <!--Header-->
-    <header class="flexBox">
+    <header class="max-w-[1460px] mx-auto my-[3rem] px-[30px] flex items-end">
       <!--Logo-->
-      <div>
+      <div class="relative transform -translate-y-[10px]">
         <img
-          src="#"
-          alt="svgLogo"
+          src="../images/logo.png"
+          alt="logo de substitution"
+          class="w-full"
         />
-        <span>seven valley</span>
       </div>
-      <nav class="flexBox">
+      <nav class="ps-[2rem] flex grow justify-between">
         <!--NavLinks-->
-        <ul class="flexBox">
-          <li>
+        <ul class="flex items-center gap-[2rem]">
+          <li class="text_dark">
             <a href="../../index.html"
               >Formations Entreprises / &Eacute;coles</a
             >
           </li>
-          <li><a href="./onlineCourse.html">Cours en ligne</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li>
+          <li class="text_dark">
+            <a href="./src/html/onlineCourse.html">Cours en ligne</a>
+          </li>
+          <li class="text_dark">
+            <a href="./src/html/contact.html">Contact</a>
+          </li>
+          <li class="text_dark">
             <label
               for="lang"
               class="hidden"
@@ -61,20 +69,27 @@
           </li>
         </ul>
         <!--NavIcons-->
-        <div class="hidden">
+        <div class="flex gap-[2rem] items-center text_dark hidden">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <a href="./logIn.html"><button>Se connecter</button></a>
+          <a href="./src/html/logIn.html"
+            ><button class="btn_header btn_dark">Se connecter</button></a
+          >
         </div>
       </nav>
     </header>
 
-    <main class="flexBox">
+    <main class="ps-[12rem] pe-[4rem] mt-[10rem] flex justify-between">
       <!--LeftPart-->
       <article>
         <!--Title-->
-        <h1>Connexion</h1>
+        <h1 class="heading heading_1 pb-[2rem]">
+          Connexion<span class="green_point">.</span>
+        </h1>
         <!--Form-->
-        <form action="#">
+        <form
+          action="#"
+          class="flex flex-col gap-[4rem] mb-[8rem]"
+        >
           <!--EmailInput-->
           <div>
             <label for="email"></label>
@@ -83,6 +98,7 @@
               name="email"
               id="email"
               placeholder="E-mail"
+              class="log_input"
             />
           </div>
           <!--PasswordInput-->
@@ -93,18 +109,29 @@
               name="password"
               id="password"
               placeholder="Mot de passe"
+              class="log_input"
             />
           </div>
           <!--Submit-->
-          <button type="submit">Se connecter</button>
+          <button
+            type="submit"
+            class="btn_main btn_dark self-start"
+          >
+            Se connecter
+          </button>
         </form>
 
         <!--SignUpLink-->
         <section>
-          <p>
+          <p class="text_black">
             Vous n'avez pas encore de compte?
-            <a href="./signUp.html">Inscrivez-vous</a>
-            <span>gratuitement</span>.
+            <a
+              href="./signUp.html"
+              class="underline"
+              ><span class="text_green"> Inscrivez-vous </span
+              ><span class="underline">gratuitement</span>
+            </a>
+            .
           </p>
         </section>
       </article>
@@ -113,23 +140,41 @@
       <aside>
         <div>
           <img
-            src="#"
-            alt="imgUnknow"
+            src="../images/meysam-jarahkar-LI7jB1925j0-unsplash (1) 1.png"
+            alt="personne random"
+            class="h-[70vh]"
           />
         </div>
       </aside>
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="pt-[250px] relative">
+      <img
+        src="../images/footer_background.png"
+        alt="fond deco"
+        class="absolute bottom-0 z-0"
+      />
+      <img
+        src="../images/footer_background-2.png"
+        alt="fond deco"
+        class="absolute bottom-0 -z-10"
+      />
+      <img
+        src="../images/footer_background-3.png"
+        alt="fond deco"
+        class="absolute bottom-0 -z-10"
+      />
       <!--SocialMedia-->
-      <section class="flexBox">
-        <i class="fa-brands fa-github-alt"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-twitter"></i>
+      <section class="flex gap-[2rem] px-[12rem] mb-[4rem] relative z-10">
+        <i class="fa-brands fa-github-alt text-[3rem]"></i>
+        <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
+        <i class="fa-brands fa-twitter text-[3rem]"></i>
       </section>
       <!--BottomBanner-->
-      <section class="flexBox">
+      <section
+        class="px-[12rem] py-[2rem] flex justify-between relative z-10 text_grey-14"
+      >
         <p>&copy; Seven valley - 2022 tous les droits réservés</p>
         <a href="#">Mentions légales et politique de confidentialité</a>
       </section>

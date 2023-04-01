@@ -536,6 +536,10 @@ video {
   z-index: 10;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -575,6 +579,14 @@ video {
           margin-inline-end: 2rem;
 }
 
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -587,6 +599,14 @@ video {
   height: 72px;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -597,6 +617,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-\[1460px\] {
@@ -626,6 +654,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -650,6 +682,14 @@ video {
   gap: 5rem;
 }
 
+.gap-\[4rem\] {
+  gap: 4rem;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
 .px-\[12rem\] {
   padding-left: 12rem;
   padding-right: 12rem;
@@ -660,18 +700,27 @@ video {
   padding-right: 30px;
 }
 
-.py-\[8rem\] {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .py-\[2rem\] {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+.py-\[8rem\] {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.pb-\[2rem\] {
+  padding-bottom: 2rem;
+}
+
 .pb-\[4rem\] {
   padding-bottom: 4rem;
+}
+
+.pe-\[4rem\] {
+  -webkit-padding-end: 4rem;
+          padding-inline-end: 4rem;
 }
 
 .pe-\[5rem\] {
@@ -703,6 +752,10 @@ video {
 
 .text-\[3rem\] {
   font-size: 3rem;
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 /* GLOBALS */
@@ -861,8 +914,41 @@ html {
   color: #fff;
 }
 
+.text_green {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: var(--color-secondary-light);
+  text-decoration: underline;
+}
+
 .green_point {
   font-size: 10rem;
   line-height: 0;
   color: var(--color-secondary);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* FORM */
+
+.log_input {
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.log_input::-moz-placeholder {
+  padding-left: 10px;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #000;
+}
+
+.log_input::placeholder {
+  padding-left: 10px;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #000;
 }
