@@ -2,18 +2,9 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="./dist/style.css"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
       rel="stylesheet"
@@ -23,46 +14,28 @@
       crossorigin="anonymous"
     ></script>
     <title>Accueil</title>
-    <meta
-      name="description"
-      content="###"
-    />
+    <meta name="description" content="###" />
   </head>
   <body>
     <!--Header-->
-    <header class="max-w-[1460px] mx-auto my-[3rem] px-[30px] flex items-end">
-      <!--Logo-->
-      <div class="relative transform -translate-y-[10px]">
-        <img
-          src="./src/images/logo.png"
-          alt="logo de substitution"
-          class="w-full"
-        />
+    <header
+      class="max-w-[1460px] mx-auto my-[2rem] lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
+    >
+      <div class="relative transform translate-y-[3px] lg:-translate-y-[10px]">
+        <img src="./src/images/logo.png" alt="" />
       </div>
-      <nav class="ps-[2rem] flex grow justify-between">
+      <!--DesktopNav-->
+      <nav class="pl-[2rem] hidden lg:flex grow justify-between">
         <!--NavLinks-->
-        <ul class="flex items-center gap-[2rem]">
-          <li class="text_dark">
-            <a href="#">Formations Entreprises / &Eacute;coles</a>
-          </li>
-          <li class="text_dark">
-            <a href="./src/html/onlineCourse.html">Cours en ligne</a>
-          </li>
-          <li class="text_dark">
-            <a href="./src/html/contact.html">Contact</a>
-          </li>
-          <li class="text_dark">
-            <label
-              for="lang"
-              class="hidden"
-              >Langue</label
-            >
-            <select
-              name="lang"
-              id="lang"
-            >
+        <ul class="flex items-center gap-[2rem] text_dark">
+          <li><a href="#"> Formations Entreprises / Écoles </a></li>
+          <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
+          <li><a href="./src/html/contact.html"></a> Contact</li>
+          <li>
+            <label for="lang" class="hidden">Langue</label>
+            <select name="lang" id="lang">
               <option value="fr">FR</option>
-              <option value="#">#</option>
+              <option value="en">EN</option>
             </select>
           </li>
         </ul>
@@ -73,6 +46,24 @@
             ><button class="btn_header btn_dark">Se connecter</button></a
           >
         </div>
+      </nav>
+      <!--HamburgerIcon-->
+      <div class="lg:hidden" id="hamburgerMenuIcon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--ResponsiveNav-->
+      <nav class="hidden" id="responsiveNavBar">
+        <ul
+          class="h-full pt-[10rem] flex flex-col items-center text-[3rem] background-grey"
+        >
+          <li><a href="#"> Formations Entreprises / Écoles </a></li>
+          <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
+          <li><a href="./src/html/contact.html">Contact</a></li>
+          <li>Connexion</li>
+          <li>Language</li>
+        </ul>
       </nav>
     </header>
 
@@ -107,25 +98,13 @@
               />
             </li>
             <li>
-              <img
-                src="./src/images/logo-vue.svg"
-                alt=""
-                class="w-[64px]"
-              />
+              <img src="./src/images/logo-vue.svg" alt="" class="w-[64px]" />
             </li>
             <li>
-              <img
-                src="./src/images/logo-react.svg"
-                alt=""
-                class="w-[64px]"
-              />
+              <img src="./src/images/logo-react.svg" alt="" class="w-[64px]" />
             </li>
             <li>
-              <img
-                src="./src/images/js.png"
-                alt=""
-                class="w-[64px]"
-              />
+              <img src="./src/images/js.png" alt="" class="w-[64px]" />
             </li>
             <li>
               <img
@@ -139,10 +118,7 @@
         </section>
         <!--LeftPart-->
         <section class="grow flex justify-end">
-          <img
-            src="./src/images/heros_background.png"
-            alt="imgUnlnow"
-          />
+          <img src="./src/images/heros_background.png" alt="imgUnlnow" />
         </section>
       </article>
 
@@ -165,7 +141,7 @@
           </p>
         </section>
         <!--Gallery-->
-        <section class="flex justify-between mb-[10rem]">
+        <section class="flex flex-wrap justify-between mb-[10rem]">
           <!--Card-->
           <div class="card">
             <div>
@@ -174,10 +150,7 @@
             </div>
             <div class="w-full flex justify-between">
               <p class="text_white">10 cours</p>
-              <img
-                src="./src/images/triple_chevrons.png"
-                alt="svgDeco"
-              />
+              <img src="./src/images/triple_chevrons.png" alt="svgDeco" />
             </div>
           </div>
           <div class="card">
@@ -187,10 +160,7 @@
             </div>
             <div class="w-full flex justify-between">
               <p class="text_white">10 cours</p>
-              <img
-                src="./src/images/triple_chevrons.png"
-                alt="svgDeco"
-              />
+              <img src="./src/images/triple_chevrons.png" alt="svgDeco" />
             </div>
           </div>
           <div class="card">
@@ -200,10 +170,7 @@
             </div>
             <div class="w-full flex justify-between">
               <p class="text_white">10 cours</p>
-              <img
-                src="./src/images/triple_chevrons.png"
-                alt="svgDeco"
-              />
+              <img src="./src/images/triple_chevrons.png" alt="svgDeco" />
             </div>
           </div>
           <div class="card">
@@ -213,10 +180,7 @@
             </div>
             <div class="w-full flex justify-between">
               <p class="text_white">10 cours</p>
-              <img
-                src="./src/images/triple_chevrons.png"
-                alt="svgDeco"
-              />
+              <img src="./src/images/triple_chevrons.png" alt="svgDeco" />
             </div>
           </div>
           <!--etc-->
@@ -232,19 +196,18 @@
       </article>
 
       <!--PresentationPart-->
-      <article class="px-[12rem] pt-[8rem] pb-[4rem] flex background-grey">
+      <article
+        class="px-[12rem] pt-[8rem] pb-[4rem] flex flex-wrap background-grey"
+      >
         <!--LeftPart-Photo-->
-        <section class="w-1/2">
-          <img
-            src="./src/images/portrait.png"
-            alt="portrait"
-          />
+        <section class="lg:w-1/2">
+          <img src="./src/images/portrait.png" alt="portrait" />
         </section>
         <!--RightPartText-->
         <section class="w-1/2">
           <!--Title-->
           <div class="mb-[2rem]">
-            <div class="flex items-center">
+            <div class="flex flex-wrap items-center">
               <img
                 src="./src/images/double_chevron.png"
                 alt="2 chevrons alignés"
@@ -301,5 +264,8 @@
         <a href="#">Mentions légales et politique de confidentialité</a>
       </section>
     </footer>
+
+    <!--script-->
+    <script src="./src/scripts/index.js"></script>
   </body>
 </html>
