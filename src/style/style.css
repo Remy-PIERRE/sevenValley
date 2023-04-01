@@ -1,21 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBALS */
+:root {
+  --color-main: #001fd8;
+  --color-main-dark: #171e4d;
+  --color-secondary: #5deb96;
+  --color-secondary-light: #a0e1ff;
+  --color-text-grey: #5b5b5b;
+  --color-text-grey-light: #8a8a8a;
+  --color-bg-grey: #f8f7f5;
+}
+html {
+  font-size: 10px;
+}
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
+  font-family: "Outfit", sans-serif;
 }
-header,
-article,
-aside {
-  margin-bottom: 48px;
+
+/* UTILS */
+
+/* COLORS */
+.background-grey {
+  background: var(--color-bg-grey);
 }
-span {
-  font-size: 28px;
-  color: blue;
+
+/* BTN */
+.btn_main {
+  height: 64px;
+  padding: 0 4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
 }
-.hidden {
-  display: none;
+.btn_header {
+  height: 40px;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
 }
-.flexBox {
+.btn_dark {
+  color: #fff;
+  background: var(--color-main);
+  border-color: var(--color-main);
+}
+.btn_trans {
+  color: #000;
+  background: transparent;
+  border-color: #000;
+}
+.padding_10 {
+  padding: 0 10rem !important;
+}
+
+/* CARD */
+.card {
+  max-width: 270px;
+  height: 290px;
+  padding: 2.5rem 2.5rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: var(--color-main-dark);
+  border-radius: 20px;
+}
+
+/* HEADING */
+.heading {
+  font-weight: 600;
+  color: var(--color-main-dark);
+}
+.heading_light {
+  font-weight: 600;
+  color: var(--color-main);
+}
+.heading_1 {
+  font-size: 6.4rem;
+  line-height: 120%;
+  margin-bottom: 2rem;
+}
+.heading_2 {
+  font-size: 4.6rem;
+  margin-bottom: 1rem;
+}
+.heading_3 {
+  font-size: 3.2rem;
+}
+.heading_4 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+.heading_bonjour {
+  font-size: 7rem;
+}
+.heading_card {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* TEXT */
+.text_dark {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-main-dark);
+}
+.text_black {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #000;
+}
+.text_grey {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--color-text-grey);
+}
+.text_grey-14 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-text-grey);
+}
+.text_white {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+.green_point {
+  font-size: 10rem;
+  line-height: 0;
+  color: var(--color-secondary);
 }

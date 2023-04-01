@@ -10,41 +10,48 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="./dist/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/90e8e7ef0d.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="./src/style/style.css"
-    />
     <title>Accueil</title>
     <meta
       name="description"
       content="###"
     />
   </head>
-
   <body>
     <!--Header-->
-    <header class="flexBox">
+    <header class="max-w-[1460px] mx-auto my-[3rem] px-[30px] flex items-end">
       <!--Logo-->
-      <div>
+      <div class="relative transform -translate-y-[10px]">
         <img
-          src="#"
-          alt="svgLogo"
+          src="./src/images/logo.png"
+          alt="logo de substitution"
+          class="w-full"
         />
-        <span>seven valley</span>
       </div>
-      <nav class="flexBox">
+      <nav class="ps-[2rem] flex grow justify-between">
         <!--NavLinks-->
-        <ul class="flexBox">
-          <li>
+        <ul class="flex items-center gap-[2rem]">
+          <li class="text_dark">
             <a href="#">Formations Entreprises / &Eacute;coles</a>
           </li>
-          <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
-          <li><a href="./src/html/contact.html">Contact</a></li>
-          <li>
+          <li class="text_dark">
+            <a href="./src/html/onlineCourse.html">Cours en ligne</a>
+          </li>
+          <li class="text_dark">
+            <a href="./src/html/contact.html">Contact</a>
+          </li>
+          <li class="text_dark">
             <label
               for="lang"
               class="hidden"
@@ -60,83 +67,154 @@
           </li>
         </ul>
         <!--NavIcons-->
-        <div>
+        <div class="flex gap-[2rem] items-center text_dark">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <a href="./src/html/logIn.html"><button>Se connecter</button></a>
+          <a href="./src/html/logIn.html"
+            ><button class="btn_header btn_dark">Se connecter</button></a
+          >
         </div>
       </nav>
     </header>
 
     <main>
       <!--Heros-->
-      <article class="flexBox">
+      <article class="flex background-grey">
         <!--RigthPart-->
-        <section>
+        <section class="w-1/2 ps-[12rem] py-[8rem]">
           <!--Title-->
-          <div>
-            <h1>Pas de limite pour apprendre à coder<span>.</span></h1>
-            <p>Entreprises / Centres de formations / Depuis chez vous</p>
+          <div class="mb-[4rem]">
+            <h1 class="heading heading_1">
+              Pas de limite pour vous apprendre à coder<span class="green_point"
+                >.</span
+              >
+            </h1>
+            <p class="text_black">
+              Entreprises / Centres de formations / Depuis chez vous
+            </p>
           </div>
           <!--CallToAction-->
-          <div>
-            <button>Programme des formations</button
-            ><button>Cours en ligne</button>
+          <div class="flex justify-between pe-[5rem] mb-[8rem]">
+            <button class="btn_main btn_dark">Programme des formations</button
+            ><button class="btn_main btn_trans">Cours en ligne</button>
           </div>
           <!--UnknowButtons-->
-          <ul class="flexBox">
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
+          <ul class="flex gap-[5rem]">
+            <li>
+              <img
+                src="./src/images/logo-wordpress.svg"
+                alt=""
+                class="w-[64px]"
+              />
+            </li>
+            <li>
+              <img
+                src="./src/images/logo-vue.svg"
+                alt=""
+                class="w-[64px]"
+              />
+            </li>
+            <li>
+              <img
+                src="./src/images/logo-react.svg"
+                alt=""
+                class="w-[64px]"
+              />
+            </li>
+            <li>
+              <img
+                src="./src/images/js.png"
+                alt=""
+                class="w-[64px]"
+              />
+            </li>
+            <li>
+              <img
+                src="./src/images/logo-angular.svg"
+                alt=""
+                class="w-[64px]"
+              />
+            </li>
             <!--etc-->
           </ul>
         </section>
         <!--LeftPart-->
-        <section>
+        <section class="grow flex justify-end">
           <img
-            src="#"
+            src="./src/images/heros_background.png"
             alt="imgUnlnow"
           />
         </section>
       </article>
 
       <!--LastCoursesGallery-->
-      <article>
+      <article class="px-[12rem] pt-[8rem] mb-[15rem]">
         <!--Title-->
-        <section>
-          <h2>Les derniers cours en ligne</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-            iusto eligendi? Dicta, dolorum? Commodi repellendus reprehenderit
-            amet, autem accusantium vel voluptatum dolorem quo similique,
-            voluptatem iure aliquid illum magnam! Hic?
+        <section class="mb-[4rem]">
+          <div class="flex">
+            <img
+              src="./src/images/chevron_bas_droite.png"
+              alt=""
+              class="me-[2rem] relative transform -translate-y-[26px]"
+            />
+            <h2 class="heading heading_2">Les derniers cours en ligne</h2>
+          </div>
+          <p class="text_grey">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
           </p>
         </section>
         <!--Gallery-->
-        <section class="flexBox">
+        <section class="flex justify-between mb-[10rem]">
           <!--Card-->
-          <div>
+          <div class="card">
             <div>
-              <h3>Java</h3>
-              <h4>Apprenez à programmer en 7 jours.</h4>
+              <h3 class="heading_card">Java</h3>
+              <h4 class="heading_4">Apprenez à programmer en 7 jours.</h4>
             </div>
-            <div class="flexBox">
-              <p>10 cours</p>
+            <div class="w-full flex justify-between">
+              <p class="text_white">10 cours</p>
               <img
-                src="#"
+                src="./src/images/triple_chevrons.png"
                 alt="svgDeco"
               />
             </div>
           </div>
-          <div>
+          <div class="card">
             <div>
-              <h3>Java</h3>
-              <h4>Apprenez à programmer en 7 jours.</h4>
+              <h3 class="heading_card">Java</h3>
+              <h4 class="heading_4">Apprenez à programmer en 7 jours.</h4>
             </div>
-            <div class="flexBox">
-              <p>10 cours</p>
+            <div class="w-full flex justify-between">
+              <p class="text_white">10 cours</p>
               <img
-                src="#"
+                src="./src/images/triple_chevrons.png"
+                alt="svgDeco"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3 class="heading_card">Java</h3>
+              <h4 class="heading_4">Apprenez à programmer en 7 jours.</h4>
+            </div>
+            <div class="w-full flex justify-between">
+              <p class="text_white">10 cours</p>
+              <img
+                src="./src/images/triple_chevrons.png"
+                alt="svgDeco"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <h3 class="heading_card">Java</h3>
+              <h4 class="heading_4">Apprenez à programmer en 7 jours.</h4>
+            </div>
+            <div class="w-full flex justify-between">
+              <p class="text_white">10 cours</p>
+              <img
+                src="./src/images/triple_chevrons.png"
                 alt="svgDeco"
               />
             </div>
@@ -144,31 +222,43 @@
           <!--etc-->
         </section>
         <!--CallToAction-->
-        <section>
-          <h2>Javascript, <span>Angular</span>, Node, Vue.js, React, ...</h2>
-          <button>Tous les cours</button>
+        <section class="text-center">
+          <h2 class="heading_3 mb-[4rem]">
+            Javascript, <span class="heading_light heading_3">Angular</span>,
+            Node, Vue.js, React, ...
+          </h2>
+          <button class="btn_main btn_dark">Tous les cours</button>
         </section>
       </article>
 
       <!--PresentationPart-->
-      <article>
+      <article class="px-[12rem] pt-[8rem] pb-[4rem] flex background-grey">
         <!--LeftPart-Photo-->
-        <section>
+        <section class="w-1/2">
           <img
-            src="#"
+            src="./src/images/portrait.png"
             alt="portrait"
           />
         </section>
         <!--RightPartText-->
-        <section>
+        <section class="w-1/2">
           <!--Title-->
-          <div>
-            <h2>Bonjour</h2>
-            <h3>Je suis Jean Frederic VINCENT,</h3>
+          <div class="mb-[2rem]">
+            <div class="flex items-center">
+              <img
+                src="./src/images/double_chevron.png"
+                alt="2 chevrons alignés"
+                class="h-[72px] me-[2rem] relative transform -translate-y-[8px]"
+              />
+              <h2 class="heading_light heading_bonjour">
+                Bonjour<span class="green_point">.</span>
+              </h2>
+            </div>
+            <h3 class="heading heading_3">Je suis Jean Frederic VINCENT,</h3>
           </div>
           <!--Text-->
-          <div>
-            <p>
+          <div class="text_grey mb-[8rem]">
+            <p class="mb-[1rem]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores blanditiis voluptatum facere nisi a vitae nam hic
               nesciunt eos? Id maiores ut harum omnis sit odio nostrum nesciunt
@@ -185,21 +275,28 @@
             </p>
           </div>
           <!--CallToAction-->
-          <button>Me contacter</button>
+          <button class="btn_main btn_dark padding_10">Me contacter</button>
         </section>
       </article>
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="pt-[250px] background-grey relative">
+      <img
+        src="./src/images/footer_background.png"
+        alt="fond deco"
+        class="absolute bottom-0 z-0"
+      />
       <!--SocialMedia-->
-      <section class="flexBox">
-        <i class="fa-brands fa-github-alt"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-twitter"></i>
+      <section class="flex gap-[2rem] px-[12rem] mb-[4rem] relative z-10">
+        <i class="fa-brands fa-github-alt text-[3rem]"></i>
+        <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
+        <i class="fa-brands fa-twitter text-[3rem]"></i>
       </section>
       <!--BottomBanner-->
-      <section class="flexBox">
+      <section
+        class="px-[12rem] py-[2rem] flex justify-between relative z-10 text_grey-14"
+      >
         <p>&copy; Seven valley - 2022 tous les droits réservés</p>
         <a href="#">Mentions légales et politique de confidentialité</a>
       </section>
