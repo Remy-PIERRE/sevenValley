@@ -11,6 +11,8 @@
   --color-text-grey: #5b5b5b;
   --color-text-grey-light: #8a8a8a;
   --color-bg-grey: #f8f7f5;
+  --color-white: #fff;
+  --color-black: #000;
 }
 /* body {
   width: 100vw;
@@ -25,9 +27,16 @@ html {
 /* UTILS */
 
 /* COLORS */
-.background-grey {
-  background: var(--color-bg-grey);
+
+/* .dark_blue {
+  color: var(--color-main-dark);
 }
+.light_blue {
+  color: var(--color-main);
+} */
+/* .white {
+  color: #fff;
+} */
 
 /* BTN */
 .btn_main {
@@ -72,10 +81,41 @@ html {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: var(--color-main-dark);
   border-radius: 20px;
 }
-
+.card_dark {
+  background: var(--color-main-dark);
+  color: var(--color-white);
+}
+.card_white {
+  background: #fff;
+  color: var(--color-main-dark);
+}
+.card span {
+  color: var(--color-secondary);
+}
+.card h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.card h4 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.card p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.card_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card_wrapper_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4em;
+}
 /* HEADING */
 .heading {
   font-weight: 600;
@@ -85,18 +125,18 @@ html {
   font-weight: 600;
   color: var(--color-main);
 }
-.heading_1 {
+/* .heading_1 {
   font-size: 6.4rem;
   line-height: 120%;
   margin-bottom: 2rem;
-}
-.heading_2 {
+} */
+/* .heading_2 {
   font-size: 4.6rem;
   margin-bottom: 1rem;
 }
 .heading_3 {
   font-size: 3.2rem;
-}
+} */
 .heading_4 {
   font-size: 2.8rem;
   font-weight: 600;
@@ -233,4 +273,97 @@ html {
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 98px;
+  height: 98px;
+  border-radius: 100px;
+  background: var(--color-bg-grey);
+}
+.select_onlineCourse {
+  background: transparent;
+}
+
+/* revision */
+
+/* globals */
+article {
+  padding: 0 12rem;
+}
+
+/* heading */
+.heading_1 {
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+.heading_2 {
+  font-size: 4.6rem;
+  font-weight: 600;
+}
+.heading_2_spec {
+  font-size: 7rem;
+  font-weight: 600;
+}
+.heading_3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+/* colors */
+.dark {
+  color: var(--color-main-dark);
+}
+.light {
+  color: var(--color-main);
+}
+.white {
+  color: var(--color-white);
+}
+.green {
+  color: var(--color-secondary-light);
+}
+.black {
+  color: var(--color-black);
+}
+.grey {
+  color: var(--color-text-grey);
+}
+
+/* background */
+.background-grey {
+  background: var(--color-bg-grey);
+}
+.background_dark {
+  background: var(--color-main-dark);
+}
+.background_trans {
+  background: transparent;
+}
+
+/* text */
+.navLinks {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.desc_h1 {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+.paraph_h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.desc_h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.paraph_h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+.desc_h2_spec {
+  font-size: 3.2rem;
+  font-weight: 600;
 }
