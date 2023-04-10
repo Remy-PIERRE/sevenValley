@@ -19,7 +19,7 @@
   <body>
     <!--Header-->
     <header
-      class="max-w-[1460px] h-[100px] mx-auto lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
+      class="max-w-[1460px] w-full h-[100px] mx-auto lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
     >
       <a
         href="#"
@@ -66,10 +66,16 @@
         <div class="responsive_navBar_wrapper">
           <ul>
             <li><a href="#"> Accueil </a></li>
-            <li><a href="#"> Formations Entreprises / Écoles </a></li>
+            <li>
+              <a href="./src/html/companyCourses.html">
+                Formations Entreprises / Écoles
+              </a>
+            </li>
             <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
             <li><a href="./src/html/contact.html">Contact</a></li>
-            <li class="responsive_navBar_lastLink">Connexion</li>
+            <li class="responsive_navBar_lastLink">
+              <a href="./src/html/logIn.html">Connexion</a>
+            </li>
           </ul>
           <div class="responsive_navBar_lang">
             <label for="lang">Langue</label>
@@ -82,7 +88,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="max-w-[100vw] overflow-hidden">
       <!--Heros-->
       <article class="flex background-grey pr-0">
         <!--RigthPart-->

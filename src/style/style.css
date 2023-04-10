@@ -20,10 +20,10 @@ html {
 * {
   font-family: "Outfit", sans-serif;
 }
-body {
+/* body {
   width: 100vw;
   overflow-x: hidden;
-}
+} */
 
 /* BTN */
 .btn_main {
@@ -158,20 +158,21 @@ body {
 
 /* ResponsiveNavBar */
 .responsive_navBar {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 100px);
   display: block;
   background: #fff;
-  position: absolute;
-  top: 100px;
+  position: fixed;
+  top: 99px;
   right: 0;
-  z-index: 10;
+  z-index: 100;
   font-size: 1.6rem;
   transform: translate(100%, 0);
   transition: transform 0.5s;
 }
 .responsive_navBar.open {
   transform: none;
+  /* position: fixed; */
 }
 .responsive_navBar_wrapper {
   display: flex;
@@ -341,4 +342,9 @@ article {
 }
 .log_input:focus {
   outline: none;
+}
+
+header {
+  position: relative;
+  overflow-x: hidden;
 }

@@ -19,20 +19,22 @@
   <body>
     <!--Header-->
     <header
-      class="max-w-[1460px] mx-auto my-[2rem] lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
+      class="max-w-[1460px] w-full h-[100px] mx-auto lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
     >
-      <!-- <header
-      class="max-w-[1460px] mx-auto my-[2rem] lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
-    > -->
-      <div class="relative transform translate-y-[3px] lg:-translate-y-[10px]">
-        <img src="../images/logo.png" alt="" />
-      </div>
+      <a
+        href="../../index.html"
+        class="relative transform translate-y-[3px] lg:-translate-y-[10px]"
+      >
+        <img src="../images/logo.png" alt="logo seven valley" />
+      </a>
       <!--DesktopNav-->
-      <nav class="pl-[2rem] hidden lg:flex grow justify-between">
+      <nav class="pl-[4rem] hidden lg:flex grow justify-between">
         <!--NavLinks-->
         <ul class="flex items-center gap-[2rem] navLinks dark">
           <li>
-            <a href="#"> Formations Entreprises / Écoles </a>
+            <a href="./companyCourses.html">
+              Formations Entreprises / Écoles
+            </a>
           </li>
           <li><a href="./onlineCourse.html">Cours en ligne</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -45,13 +47,14 @@
           </li>
         </ul>
         <!--NavIcons-->
-        <div class="flex gap-[2rem] items-center dark">
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="flex gap-[2rem] items-center dark hidden">
+          <i class="fa-solid fa-magnifying-glass text-[2rem]"></i>
           <a href="./logIn.html"
             ><button class="btn_header btn_dark">Se connecter</button></a
           >
         </div>
       </nav>
+
       <!--HamburgerIcon-->
       <div class="lg:hidden" id="hamburgerMenuIcon">
         <span></span>
@@ -59,16 +62,29 @@
         <span></span>
       </div>
       <!--ResponsiveNav-->
-      <nav class="hidden" id="responsiveNavBar">
-        <ul
-          class="h-full pt-[10rem] flex flex-col items-center text-[3rem] background-grey"
-        >
-          <li><a href="#"> Formations Entreprises / Écoles </a></li>
-          <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
-          <li><a href="./src/html/contact.html">Contact</a></li>
-          <li>Connexion</li>
-          <li>Language</li>
-        </ul>
+      <nav class="hidden responsive_navBar" id="responsiveNavBar">
+        <div class="responsive_navBar_wrapper">
+          <ul>
+            <li><a href="../../index.html"> Accueil </a></li>
+            <li>
+              <a href="./companyCourses.html">
+                Formations Entreprises / Écoles
+              </a>
+            </li>
+            <li><a href="./onlineCourse.html">Cours en ligne</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="responsive_navBar_lastLink">
+              <a href="./logIn.html">Connexion</a>
+            </li>
+          </ul>
+          <div class="responsive_navBar_lang">
+            <label for="lang">Langue</label>
+            <select name="lang" id="lang">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -153,5 +169,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="../scripts/index.js"></script>
   </body>
 </html>
