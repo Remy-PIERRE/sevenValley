@@ -18,52 +18,64 @@
   </head>
   <body>
     <!--Header-->
-    <header class="max-w-[1460px] mx-auto my-[3rem] px-[30px] flex items-end">
-      <!--Logo-->
-      <div class="relative transform -translate-y-[10px]">
-        <img
-          src="../images/logo.png"
-          alt="logo de substitution"
-          class="w-full"
-        />
+    <header
+      class="max-w-[1460px] mx-auto my-[2rem] lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
+    >
+      <div
+        class="h-[100px] relative transform translate-y-[3px] lg:-translate-y-[10px]"
+      >
+        <img src="../images/logo.png" alt="" />
       </div>
-      <nav class="ps-[2rem] flex grow justify-between">
+      <!--DesktopNav-->
+      <nav class="pl-[2rem] hidden lg:flex grow justify-between">
         <!--NavLinks-->
-        <ul class="flex items-center gap-[2rem]">
-          <li class="text_dark">
-            <a href="../../index.html"
-              >Formations Entreprises / &Eacute;coles</a
-            >
+        <ul class="flex items-center gap-[2rem] navLinks dark">
+          <li>
+            <a href="#"> Formations Entreprises / Écoles </a>
           </li>
-          <li class="text_dark">
-            <a href="./src/html/onlineCourse.html">Cours en ligne</a>
-          </li>
-          <li class="text_dark">
-            <a href="./src/html/contact.html">Contact</a>
-          </li>
-          <li class="text_dark">
+          <li><a href="./onlineCourse.html">Cours en ligne</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
             <label for="lang" class="hidden">Langue</label>
             <select name="lang" id="lang">
               <option value="fr">FR</option>
-              <option value="#">#</option>
+              <option value="en">EN</option>
             </select>
           </li>
         </ul>
         <!--NavIcons-->
-        <div class="flex gap-[2rem] items-center text_dark hidden">
+        <div class="flex gap-[2rem] items-center dark">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <a href="./src/html/logIn.html"
+          <a href="./logIn.html"
             ><button class="btn_header btn_dark">Se connecter</button></a
           >
         </div>
       </nav>
+      <!--HamburgerIcon-->
+      <div class="lg:hidden" id="hamburgerMenuIcon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--ResponsiveNav-->
+      <nav class="hidden" id="responsiveNavBar">
+        <ul
+          class="h-full pt-[10rem] flex flex-col items-center text-[3rem] background-grey"
+        >
+          <li><a href="#"> Formations Entreprises / Écoles </a></li>
+          <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
+          <li><a href="./src/html/contact.html">Contact</a></li>
+          <li>Connexion</li>
+          <li>Language</li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="ps-[12rem] pe-[4rem] mt-[10rem] flex justify-between">
+    <main class="pr-[4rem] mt-[10rem] mb-[8rem] flex justify-between">
       <!--LeftPart-->
       <article>
         <!--Title-->
-        <h1 class="heading heading_1 pb-[2rem]">
+        <h1 class="heading_1 dark mb-[8rem]">
           Connexion<span class="green_point">.</span>
         </h1>
         <!--Form-->
@@ -98,12 +110,11 @@
 
         <!--SignUpLink-->
         <section>
-          <p class="text_black">
+          <p class="paraph_h1">
             Vous n'avez pas encore de compte?
-            <a href="./signUp.html" class="underline"
-              ><span class="text_green"> Inscrivez-vous </span
-              ><span class="underline">gratuitement</span>
-            </a>
+            <a href="./signUp.html"
+              ><span class="underline green"> Inscrivez-vous </span> </a
+            ><span class="underline">gratuitement</span>
             &nbsp;.
           </p>
         </section>

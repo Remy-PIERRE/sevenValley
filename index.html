@@ -19,7 +19,7 @@
   <body>
     <!--Header-->
     <header
-      class="max-w-[1460px] mx-auto my-[2rem] lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
+      class="max-w-[1460px] h-[100px] mx-auto lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
     >
       <a
         href="#"
@@ -54,6 +54,7 @@
           >
         </div>
       </nav>
+
       <!--HamburgerIcon-->
       <div class="lg:hidden" id="hamburgerMenuIcon">
         <span></span>
@@ -61,16 +62,23 @@
         <span></span>
       </div>
       <!--ResponsiveNav-->
-      <nav class="hidden" id="responsiveNavBar">
-        <ul
-          class="h-full pt-[10rem] flex flex-col items-center text-[3rem] background-grey"
-        >
-          <li><a href="#"> Formations Entreprises / Écoles </a></li>
-          <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
-          <li><a href="./src/html/contact.html">Contact</a></li>
-          <li>Connexion</li>
-          <li>Language</li>
-        </ul>
+      <nav class="hidden responsive_navBar" id="responsiveNavBar">
+        <div class="responsive_navBar_wrapper">
+          <ul>
+            <li><a href="#"> Accueil </a></li>
+            <li><a href="#"> Formations Entreprises / Écoles </a></li>
+            <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
+            <li><a href="./src/html/contact.html">Contact</a></li>
+            <li class="responsive_navBar_lastLink">Connexion</li>
+          </ul>
+          <div class="responsive_navBar_lang">
+            <label for="lang">Langue</label>
+            <select name="lang" id="lang">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </div>
       </nav>
     </header>
 
