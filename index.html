@@ -21,11 +21,14 @@
     <header
       class="max-w-[1460px] mx-auto my-[2rem] lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
     >
-      <div class="relative transform translate-y-[3px] lg:-translate-y-[10px]">
+      <a
+        href="#"
+        class="relative transform translate-y-[3px] lg:-translate-y-[10px]"
+      >
         <img src="./src/images/logo.png" alt="" />
-      </div>
+      </a>
       <!--DesktopNav-->
-      <nav class="pl-[2rem] hidden lg:flex grow justify-between">
+      <nav class="pl-[4rem] hidden lg:flex grow justify-between">
         <!--NavLinks-->
         <ul class="flex items-center gap-[2rem] navLinks dark">
           <li>
@@ -45,7 +48,7 @@
         </ul>
         <!--NavIcons-->
         <div class="flex gap-[2rem] items-center dark">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-magnifying-glass text-[2rem]"></i>
           <a href="./src/html/logIn.html"
             ><button class="btn_header btn_dark">Se connecter</button></a
           >
@@ -249,24 +252,24 @@
     </main>
 
     <!--Footer-->
-    <footer class="pt-[250px] background-grey relative">
+    <footer class="h-[300px] background-grey relative pb-[4rem]">
       <img
-        src="./src/images/footer_background.png"
+        src="./src/images/background_footer.png"
         alt="fond deco"
         class="absolute bottom-0 z-0"
       />
-      <!--SocialMedia-->
-      <section class="flex gap-[2rem] px-[12rem] mb-[4rem] relative z-10">
-        <i class="fa-brands fa-github-alt text-[3rem]"></i>
-        <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
-        <i class="fa-brands fa-twitter text-[3rem]"></i>
-      </section>
-      <!--BottomBanner-->
-      <section
-        class="px-[12rem] py-[2rem] flex justify-between relative z-10 text_grey-14"
-      >
-        <p>&copy; Seven valley - 2022 tous les droits réservés</p>
-        <a href="#">Mentions légales et politique de confidentialité</a>
+
+      <section class="w-full px-[12rem] absolute bottom-[4rem] z-10">
+        <div class="flex gap-[2rem] mb-[6rem]">
+          <i class="fa-brands fa-github-alt text-[3rem]"></i>
+          <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
+          <i class="fa-brands fa-twitter text-[3rem]"></i>
+        </div>
+
+        <div class="flex justify-between footer-text">
+          <p>&copy; Seven valley - 2022 tous les droits réservés</p>
+          <a href="#">Mentions légales et politique de confidentialité</a>
+        </div>
       </section>
     </footer>
 

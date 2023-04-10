@@ -19,19 +19,20 @@
 
   <body>
     <!--Header-->
-    <header class="flexBox">
-      <!--Logo-->
-      <div>
-        <img src="#" alt="svgLogo" />
-        <span>seven valley</span>
+    <header
+      class="max-w-[1460px] mx-auto my-[2rem] lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
+    >
+      <div class="relative transform translate-y-[3px] lg:-translate-y-[10px]">
+        <img src="../images/logo.png" alt="" />
       </div>
-      <nav class="flexBox">
+      <!--DesktopNav-->
+      <nav class="pl-[2rem] hidden lg:flex grow justify-between">
         <!--NavLinks-->
-        <ul class="flexBox">
+        <ul class="flex items-center gap-[2rem] navLinks dark">
           <li>
-            <a href="../../index.html"
-              >Formations Entreprises / &Eacute;coles</a
-            >
+            <a href="./companyCourses.html">
+              Formations Entreprises / Écoles
+            </a>
           </li>
           <li><a href="./onlineCourse.html">Cours en ligne</a></li>
           <li><a href="#">Contact</a></li>
@@ -39,35 +40,56 @@
             <label for="lang" class="hidden">Langue</label>
             <select name="lang" id="lang">
               <option value="fr">FR</option>
-              <option value="#">#</option>
+              <option value="en">EN</option>
             </select>
           </li>
         </ul>
         <!--NavIcons-->
-        <div>
+        <div class="flex gap-[2rem] items-center text_dark">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <a href="./logIn.html"><button>Se connecter</button></a>
+          <a href="./logIn.html"
+            ><button class="btn_header btn_dark">Se connecter</button></a
+          >
         </div>
+      </nav>
+      <!--HamburgerIcon-->
+      <div class="lg:hidden" id="hamburgerMenuIcon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--ResponsiveNav-->
+      <nav class="hidden" id="responsiveNavBar">
+        <ul
+          class="h-full pt-[10rem] flex flex-col items-center text-[3rem] background-grey"
+        >
+          <li><a href="#"> Formations Entreprises / Écoles </a></li>
+          <li><a href="./src/html/onlineCourse.html">Cours en ligne</a></li>
+          <li><a href="./src/html/contact.html">Contact</a></li>
+          <li>Connexion</li>
+          <li>Language</li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <!--ContactForm-->
-      <article>
+      <article class="my-[8rem]">
         <!--Title-->
-        <section>
-          <h1 class="heading_1 dark">Contact</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            asperiores aspernatur exercitationem tempora ratione, rerum harum,
-            eaque voluptas sit obcaecati debitis dolorum at excepturi unde
-            voluptatum culpa accusantium veritatis qui.
+        <section class="mb-[8rem]">
+          <h1 class="heading_1 dark mb-[2rem]">
+            Contact<span class="green_point">.</span>
+          </h1>
+          <p class="paraph_h1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </section>
         <!--Form-->
-        <form action="#">
+        <form action="#" class="w-3/5 form_contact black">
           <!--ObjectSelect-->
-          <div>
+          <div class="flex gap-[2rem]">
             <label for="object">Objet*</label
             ><select name="object" id="object">
               <option value="formation">
@@ -107,23 +129,29 @@
             ></textarea>
           </div>
           <!--Submit-->
-          <button type="submit">Envoyer</button>
+          <button type="submit" class="btn_submit btn_dark">Envoyer</button>
         </form>
       </article>
     </main>
 
     <!--Footer-->
-    <footer>
-      <!--SocialMedia-->
-      <section class="flexBox">
-        <i class="fa-brands fa-github-alt"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-twitter"></i>
-      </section>
-      <!--BottomBanner-->
-      <section class="flexBox">
-        <p>&copy; Seven valley - 2022 tous les droits réservés</p>
-        <a href="#">Mentions légales et politique de confidentialité</a>
+    <footer class="h-[300px] background_white relative pb-[4rem]">
+      <img
+        src="../images/background_footer.png"
+        alt="fond deco"
+        class="w-full absolute bottom-0 z-0"
+      />
+
+      <section class="w-full px-[12rem] absolute bottom-[4rem] z-10">
+        <div class="flex gap-[2rem] mb-[6rem]">
+          <i class="fa-brands fa-github-alt text-[3rem]"></i>
+          <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
+          <i class="fa-brands fa-twitter text-[3rem]"></i>
+        </div>
+        <div class="flex justify-between footer-text">
+          <p>&copy; Seven valley - 2022 tous les droits réservés</p>
+          <a href="#">Mentions légales et politique de confidentialité</a>
+        </div>
       </section>
     </footer>
   </body>

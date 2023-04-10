@@ -2,14 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
       rel="stylesheet"
@@ -18,15 +12,9 @@
       src="https://kit.fontawesome.com/90e8e7ef0d.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="../../dist/style.css"
-    />
+    <link rel="stylesheet" href="../../dist/style.css" />
     <title>Log In</title>
-    <meta
-      name="description"
-      content="###"
-    />
+    <meta name="description" content="###" />
   </head>
   <body>
     <!--Header-->
@@ -54,15 +42,8 @@
             <a href="./src/html/contact.html">Contact</a>
           </li>
           <li class="text_dark">
-            <label
-              for="lang"
-              class="hidden"
-              >Langue</label
-            >
-            <select
-              name="lang"
-              id="lang"
-            >
+            <label for="lang" class="hidden">Langue</label>
+            <select name="lang" id="lang">
               <option value="fr">FR</option>
               <option value="#">#</option>
             </select>
@@ -86,10 +67,7 @@
           Créer un compte<span class="green_point">.</span>
         </h1>
         <!--Form-->
-        <form
-          action="#"
-          class="flex flex-col gap-[4rem] mb-[8rem]"
-        >
+        <form action="#" class="flex flex-col gap-[4rem] mb-[8rem]">
           <!--EmailInput-->
           <div>
             <label for="email"></label>
@@ -113,10 +91,7 @@
             />
           </div>
           <!--Submit-->
-          <button
-            type="submit"
-            class="btn_main btn_dark self-start"
-          >
+          <button type="submit" class="btn_main btn_dark self-start">
             Se connecter
           </button>
         </form>
@@ -125,9 +100,7 @@
         <section>
           <p class="text_black">
             Vous avez déjà un compte?
-            <a
-              href="./logIn.html"
-              class="underline"
+            <a href="./logIn.html" class="underline"
               ><span class="text_green"> Connectez-vous </span
               ><span class="underline">simplement</span>
             </a>
@@ -149,34 +122,23 @@
     </main>
 
     <!--Footer-->
-    <footer class="pt-[250px] relative">
+    <footer class="h-[300px] background_white relative pb-[4rem]">
       <img
-        src="../images/footer_background.png"
+        src="../images/background_footer.png"
         alt="fond deco"
-        class="absolute bottom-0 z-0"
+        class="w-full absolute bottom-0 z-0"
       />
-      <img
-        src="../images/footer_background-2.png"
-        alt="fond deco"
-        class="absolute bottom-0 -z-10"
-      />
-      <img
-        src="../images/footer_background-3.png"
-        alt="fond deco"
-        class="absolute bottom-0 -z-10"
-      />
-      <!--SocialMedia-->
-      <section class="flex gap-[2rem] px-[12rem] mb-[4rem] relative z-10">
-        <i class="fa-brands fa-github-alt text-[3rem]"></i>
-        <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
-        <i class="fa-brands fa-twitter text-[3rem]"></i>
-      </section>
-      <!--BottomBanner-->
-      <section
-        class="px-[12rem] py-[2rem] flex justify-between relative z-10 text_grey-14"
-      >
-        <p>&copy; Seven valley - 2022 tous les droits réservés</p>
-        <a href="#">Mentions légales et politique de confidentialité</a>
+
+      <section class="w-full px-[12rem] absolute bottom-[4rem] z-10">
+        <div class="flex gap-[2rem] mb-[6rem]">
+          <i class="fa-brands fa-github-alt text-[3rem]"></i>
+          <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
+          <i class="fa-brands fa-twitter text-[3rem]"></i>
+        </div>
+        <div class="flex justify-between footer-text">
+          <p>&copy; Seven valley - 2022 tous les droits réservés</p>
+          <a href="#">Mentions légales et politique de confidentialité</a>
+        </div>
       </section>
     </footer>
   </body>
