@@ -91,18 +91,18 @@
 
     <main>
       <!--HeroPart-->
-      <article class="flex flex-col items-center py-[10rem]">
+      <article class="flex flex-col items-center py-[6rem] lg:py-[10rem]">
         <!--Container-->
-        <section class="flex mb-[8rem]">
+        <section class="flex mb-[4rem] lg:mb-[8rem]">
           <!--LeftPart-Text-->
-          <section class="w-1/2 pr-[2rem]">
+          <section class="lg:w-1/2">
             <!--Title-->
-            <div class="mb-[2rem]">
+            <div class="mb-[2rem] text-center lg:text-left">
               <h1 class="heading_1 dark mb-[2rem]">Cours en ligne</h1>
               <h2 class="desc_h1 dark">XXXXXXXXX</h2>
             </div>
             <!--Text-->
-            <div class="paraph_h1 grey mb-[4rem]">
+            <div class="paraph_h1 grey mb-[4rem] text-center lg:text-left">
               <p class="mb-[2rem]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
                 tenetur unde deserunt nobis atque eos consectetur iure dicta
@@ -117,10 +117,12 @@
               </p>
             </div>
             <!--CallToAction-->
-            <button class="btn_main btn_dark">xxxxx</button>
+            <button class="btn_main btn_dark mx-auto block lg:mx-0">
+              xxxxx
+            </button>
           </section>
           <!--RightPartImg-->
-          <div class="w-1/2">
+          <div class="w-1/2 hidden lg:block">
             <img
               src="../images/nicole-wolf-CZ9AjMGKIFI-unsplash 1.png"
               alt="imgUnknow"
@@ -131,7 +133,7 @@
         <!--BottomPartIcons-->
         <section>
           <!--Icons-->
-          <ul class="flex gap-[6rem]">
+          <ul class="flex flex-wrap justify-center gap-[4rem] lg:gap-[6rem]">
             <li>
               <img src="#" alt="item" class="icon" />
             </li>
@@ -158,18 +160,18 @@
       </article>
 
       <!--OnlineCoursesGallery-->
-      <article class="background_dark py-[8rem]">
+      <article class="background_dark py-[4rem] lg:py-[8rem]">
         <!--Header-->
         <section>
           <!--Title-->
-          <div class="mb-[4rem]">
+          <div class="mb-[2rem] lg:mb-[4rem]">
             <div class="flex items-end">
               <img
                 src="../images/chevron_bas_droite_white.png"
                 alt="icon chevron blanc"
-                class="mr-[2rem] relative transform -translate-y-[38px]"
+                class="mr-[2rem] relative transform -translate-y-[38px] hidden lg:block"
               />
-              <h2 class="heading_2 white mb-[2rem]">
+              <h2 class="heading_2 white mb-[2rem] text-center lg:text-left">
                 Liste des cours en ligne
               </h2>
             </div>
@@ -180,14 +182,16 @@
             </p>
           </div>
           <!--Text-->
-          <p class="paraph_h2 white mb-[8rem]">
+          <p class="paraph_h2 white mb-[4rem] lg:mb-[8rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
             corrupti delectus. Voluptates dignissimos sunt mollitia. Quas magnam
             ratione error nisi, veritatis, beatae accusantium distinctio,
             dignissimos facilis quo autem amet numquam.
           </p>
           <!--Filters-->
-          <div class="flex gap-[10rem] desc_h1 white mb-[8rem]">
+          <div
+            class="flex flex-col lg:flex-row gap-[2rem] lg:gap-[10rem] items-center desc_h1 white mb-[4rem] lg:mb-[8rem]"
+          >
             <!--LevelFilter-->
             <div>
               <label for="level" class="mr-[2rem]">Niveau</label>
@@ -207,7 +211,7 @@
           </div>
         </section>
         <!--Gallery-->
-        <section class="card_wrapper_grid mb-[10rem]">
+        <section class="card_wrapper_grid mb-[6rem] lg:mb-[10rem]">
           <!--Card-->
           <div class="card card_white">
             <div>
@@ -312,16 +316,20 @@
       <img
         src="../images/background_footer.png"
         alt="fond deco"
-        class="w-full absolute bottom-0 z-0"
+        class="absolute bottom-0 z-0 hidden lg:bloc"
       />
 
-      <section class="w-full px-[12rem] absolute bottom-[4rem] z-10">
-        <div class="flex gap-[2rem] mb-[6rem]">
+      <section
+        class="w-full px-[2rem] lg:px-[12rem] absolute bottom-[4rem] z-10"
+      >
+        <div class="flex justify-center lg:justify-start gap-[2rem] mb-[6rem]">
           <i class="fa-brands fa-github-alt text-[3rem]"></i>
           <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
           <i class="fa-brands fa-twitter text-[3rem]"></i>
         </div>
-        <div class="flex justify-between footer-text">
+        <div
+          class="flex flex-col lg:flex-row gap-[2rem] items-center justify-between footer-text"
+        >
           <p>&copy; Seven valley - 2022 tous les droits réservés</p>
           <a href="#">Mentions légales et politique de confidentialité</a>
         </div>

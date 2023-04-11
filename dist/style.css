@@ -550,8 +550,9 @@ video {
   margin-bottom: 8rem;
 }
 
-.mb-\[10rem\] {
-  margin-bottom: 10rem;
+.my-\[4rem\] {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .mb-\[2rem\] {
@@ -583,6 +584,10 @@ video {
   margin-top: 10rem;
 }
 
+.mt-\[2rem\] {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -611,20 +616,8 @@ video {
   height: 72px;
 }
 
-.h-\[150px\] {
-  height: 150px;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
 .w-1\/2 {
   width: 50%;
-}
-
-.w-3\/5 {
-  width: 60%;
 }
 
 .w-\[64px\] {
@@ -633,10 +626,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-\[100vw\] {
-  max-width: 100vw;
 }
 
 .max-w-\[1460px\] {
@@ -699,10 +688,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[10rem\] {
-  gap: 10rem;
-}
-
 .gap-\[1rem\] {
   gap: 1rem;
 }
@@ -715,16 +700,8 @@ video {
   gap: 4rem;
 }
 
-.gap-\[6rem\] {
-  gap: 6rem;
-}
-
 .self-start {
   align-self: flex-start;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .px-\[12rem\] {
@@ -737,9 +714,9 @@ video {
   padding-right: 30px;
 }
 
-.py-\[10rem\] {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+.py-\[2rem\] {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-\[4rem\] {
@@ -747,14 +724,24 @@ video {
   padding-bottom: 4rem;
 }
 
+.py-\[6rem\] {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-\[8rem\] {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
-.py-\[2rem\] {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-\[4rem\] {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-\[2rem\] {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-\[4rem\] {
@@ -765,12 +752,16 @@ video {
   padding-left: 4rem;
 }
 
+.pr-\[4rem\] {
+  padding-right: 4rem;
+}
+
 .pr-\[2rem\] {
   padding-right: 2rem;
 }
 
-.pr-\[4rem\] {
-  padding-right: 4rem;
+.pr-0 {
+  padding-right: 0px;
 }
 
 .text-center {
@@ -861,7 +852,8 @@ article {
 
 .btn_submit {
   height: 40px;
-  margin-left: calc(15% + 4rem);
+  display: block;
+  margin: auto;
   padding: 0 8rem;
   border-radius: 100px;
   font-size: 1.8rem;
@@ -921,8 +913,20 @@ article {
 }
 
 .card_white {
+  width: 100%;
+  padding: 1rem 1rem;
   background: #fff;
   color: var(--color-main-dark);
+}
+
+.card_white h3 {
+  font-size: 1.8rem;
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+
+.card_white h4 {
+  font-size: 1.4rem;
 }
 
 .card span {
@@ -952,11 +956,28 @@ article {
 
 .card_wrapper_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4em;
+  grid-template-columns: repeat(2, calc(50% - 0.5rem));
+  gap: 1rem;
 }
 
-/* FORM */
+@media (min-width: 976px) {
+  .card_wrapper_grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4em;
+  }
+
+  .card {
+    max-width: 270px;
+    height: 290px;
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+  }
+}
 
 /* hamburgerMenuIcon */
 
@@ -1236,24 +1257,20 @@ article {
 /* form */
 
 .form_contact {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
 .form_contact > div {
-  display: grid;
-  grid-template-columns: 15% 1fr;
-  gap: 4rem;
-  margin-bottom: 8rem;
-}
-
-.form_contact label {
-  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .form_contact input {
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   padding-left: 10px;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
   font-size: 2.4rem;
@@ -1263,12 +1280,13 @@ article {
 
 .form_contact textarea {
   width: 100%;
-  height: 20rem;
+  height: 10rem;
   padding-left: 10px;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
   font-size: 2.4rem;
   font-weight: 300;
   color: #000;
+  margin-bottom: 4rem;
 }
 
 .log_input {
@@ -1285,28 +1303,97 @@ article {
   outline: none;
 }
 
+@media (min-width: 976px) {
+  .form_contact {
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+
+  .form_contact > div {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    gap: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  .form_contact label {
+    justify-self: end;
+  }
+
+  .form_contact input {
+    width: 100%;
+    height: 5rem;
+    padding-left: 10px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #000;
+  }
+
+  .form_contact textarea {
+    width: 100%;
+    height: 20rem;
+    padding-left: 10px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #000;
+  }
+
+  .log_input {
+    width: 100%;
+    height: 5rem;
+    padding-left: 10px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #000;
+  }
+
+  .log_input:focus {
+    outline: none;
+  }
+}
+
 header {
   position: relative;
   overflow-x: hidden;
 }
 
 @media (min-width: 976px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:my-\[3rem\] {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
 
-  .lg\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
+  .lg\:my-\[8rem\] {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:mb-\[10rem\] {
     margin-bottom: 10rem;
   }
 
-  .lg\:mb-0 {
-    margin-bottom: 0px;
+  .lg\:mb-\[4rem\] {
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mb-\[8rem\] {
+    margin-bottom: 8rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -1321,12 +1408,12 @@ header {
     display: none;
   }
 
-  .lg\:h-\[300px\] {
-    height: 300px;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-3\/5 {
+    width: 60%;
   }
 
   .lg\:-translate-y-\[10px\] {
@@ -1350,18 +1437,31 @@ header {
     justify-content: space-between;
   }
 
+  .lg\:gap-\[10rem\] {
+    gap: 10rem;
+  }
+
   .lg\:gap-\[5rem\] {
     gap: 5rem;
   }
 
-  .lg\:py-\[8rem\] {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  .lg\:gap-\[6rem\] {
+    gap: 6rem;
   }
 
   .lg\:px-\[12rem\] {
     padding-left: 12rem;
     padding-right: 12rem;
+  }
+
+  .lg\:py-\[10rem\] {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .lg\:py-\[8rem\] {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .lg\:pr-0 {
