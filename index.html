@@ -88,11 +88,11 @@
       </nav>
     </header>
 
-    <main class="max-w-[100vw] overflow-hidden">
+    <main>
       <!--Heros-->
-      <article class="flex background-grey pr-0">
+      <article class="flex background-grey lg:pr-0">
         <!--RigthPart-->
-        <section class="w-1/2 py-[8rem]">
+        <section class="lg:w-1/2 py-[8rem] text-center lg:text-left">
           <!--Title-->
           <div class="mb-[4rem]">
             <h1 class="heading_1 dark mb-[4rem]">
@@ -105,12 +105,14 @@
             </p>
           </div>
           <!--CallToAction-->
-          <div class="flex justify-between mb-[8rem]">
+          <div
+            class="flex flex-col lg:flex-row gap-[2rem] justify-between mb-[8rem]"
+          >
             <button class="btn_main btn_dark">Programme des formations</button
             ><button class="btn_main btn_trans">Cours en ligne</button>
           </div>
           <!--Icons-->
-          <ul class="flex gap-[5rem]">
+          <ul class="flex gap-[2rem] lg:gap-[5rem]">
             <li>
               <img
                 src="./src/images/logo-wordpress.svg"
@@ -138,33 +140,35 @@
           </ul>
         </section>
         <!--LeftPart-->
-        <section class="grow flex justify-end">
+        <section class="grow flex justify-end hidden lg:block">
           <img src="./src/images/heros_background.png" alt="imgUnknow" />
         </section>
       </article>
 
       <!--LastCoursesGallery-->
-      <article class="py-[8rem]">
+      <article class="py-[4rem] lg:py-[8rem]">
         <!--Title-->
         <section class="mb-[4rem]">
           <div class="flex">
             <img
               src="./src/images/chevron_bas_droite.png"
               alt=""
-              class="mr-[2rem] relative transform -translate-y-[36px]"
+              class="mr-[2rem] relative transform -translate-y-[36px] hidden lg:block"
             />
-            <h2 class="heading_2 dark mb-[2rem]">
+            <h2 class="heading_2 dark mb-[2rem] text-center lg:text-left">
               Les derniers cours en ligne
             </h2>
           </div>
-          <p class="desc_h2 grey">
+          <p class="desc_h2 grey text-center lg:text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
         </section>
         <!--Gallery-->
-        <section class="flex flex-wrap justify-between mb-[10rem]">
+        <section
+          class="flex flex-wrap justify-center gap-[2rem] lg:justify-between mb-[4rem] lg:mb-[10rem]"
+        >
           <!--Card-->
           <div class="card card_dark">
             <div>
@@ -210,7 +214,7 @@
           <!--etc-->
         </section>
         <!--CallToAction-->
-        <section class="text-center">
+        <section class="text-center mb-[2rem]">
           <h3 class="heading_3 dark mb-[4rem]">
             Javascript, <span class="light">Angular</span>, Node, Vue.js, React,
             ...
@@ -220,29 +224,33 @@
       </article>
 
       <!--PresentationPart-->
-      <article class="py-[8rem] flex flex-wrap background-grey">
+      <article class="py-[2rem] lg:py-[8rem] flex flex-wrap background-grey">
         <!--LeftPart-Photo-->
-        <section class="lg:w-1/2">
+        <section class="lg:w-1/2 mb-[2rem] lg:mb-0">
           <img src="./src/images/portrait.png" alt="portrait" />
         </section>
         <!--RightPartText-->
-        <section class="w-1/2">
+        <section class="lg:w-1/2">
           <!--Title-->
           <div class="mb-[2rem]">
-            <div class="flex flex-wrap items-center">
+            <div
+              class="flex flex-wrap justify-center lg:justify-start items-center"
+            >
               <img
                 src="./src/images/double_chevron.png"
                 alt="2 chevrons alignés"
-                class="h-[72px] me-[2rem] relative transform -translate-y-[8px]"
+                class="h-[72px] me-[2rem] relative transform -translate-y-[8px] hidden lg:block"
               />
               <h2 class="heading_2_spec light">
                 Bonjour<span class="green_point">.</span>
               </h2>
             </div>
-            <h3 class="desc_h2_spec dark">Je suis Jean Frederic VINCENT,</h3>
+            <h3 class="desc_h2_spec dark text-center lg:text-left">
+              Je suis Jean Frederic VINCENT,
+            </h3>
           </div>
           <!--Text-->
-          <div class="paraph_h1 grey mb-[8rem]">
+          <div class="paraph_h1 grey mb-[8rem] text-center lg:text-left">
             <p class="mb-[2rem]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores blanditiis voluptatum facere nisi a vitae nam hic
@@ -260,7 +268,9 @@
             </p>
           </div>
           <!--CallToAction-->
-          <button class="btn_main btn_dark padding_10">Me contacter</button>
+          <button class="btn_main btn_dark block mx-auto lg:mx-0">
+            Me contacter
+          </button>
         </section>
       </article>
     </main>
@@ -270,17 +280,19 @@
       <img
         src="./src/images/background_footer.png"
         alt="fond deco"
-        class="absolute bottom-0 z-0"
+        class="absolute bottom-0 z-0 hidden lg:block"
       />
 
-      <section class="w-full px-[12rem] absolute bottom-[4rem] z-10">
-        <div class="flex gap-[2rem] mb-[6rem]">
+      <section class="w-full lg:px-[12rem] absolute bottom-[4rem] z-10">
+        <div class="flex justify-center lg:justify-start gap-[2rem] mb-[6rem]">
           <i class="fa-brands fa-github-alt text-[3rem]"></i>
           <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
           <i class="fa-brands fa-twitter text-[3rem]"></i>
         </div>
 
-        <div class="flex justify-between footer-text">
+        <div
+          class="flex flex-col lg:flex-row gap-[2rem] items-center justify-between footer-text"
+        >
           <p>&copy; Seven valley - 2022 tous les droits réservés</p>
           <a href="#">Mentions légales et politique de confidentialité</a>
         </div>
