@@ -91,45 +91,41 @@
 
     <main>
       <!--HeroPart-->
-      <article class="flex flex-col items-center py-[6rem] lg:py-[10rem]">
-        <!--Container-->
-        <section class="flex mb-[4rem] lg:mb-[8rem]">
-          <!--LeftPart-Text-->
-          <section class="lg:w-1/2">
-            <!--Title-->
-            <div class="mb-[2rem] text-center lg:text-left">
-              <h1 class="heading_1 dark mb-[2rem]">
-                Formations entreprises / écoles
-              </h1>
-              <h2 class="desc_h1 dark">Cours en présentiel ou en visio</h2>
-            </div>
-            <!--Text-->
-            <div class="paraph_h1 grey mb-[4rem] text-center lg:text-left">
-              <p class="mb-[2rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                tenetur unde deserunt nobis atque eos consectetur iure dicta
-                distinctio. Possimus!
-              </p>
-              <p>Je me déplace dans vos locaux ...</p>
-            </div>
-            <!--CallToAction-->
-            <button class="btn_main btn_dark mx-auto block lg:mx-0">
-              Programme de formation
-            </button>
-          </section>
-          <!--RightPartImg-->
-          <div class="w-1/2 hidden lg:block">
+      <article class="herosPart">
+        <!--LeftPart-Text-->
+        <section class="herosPart__text">
+          <!--Title-->
+          <div class="herosPart__text--title">
+            <h1>Formations entreprises / écoles</h1>
+            <h2>Cours en présentiel ou en visio</h2>
+          </div>
+          <!--Text-->
+          <div class="herosPart__text-paraph">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              tenetur unde deserunt nobis atque eos consectetur iure dicta
+              distinctio. Possimus!
+            </p>
+            <p>Je me déplace dans vos locaux ...</p>
+          </div>
+          <!--CallToAction-->
+          <button class="btn_main btn_dark mx-auto block lg:mx-0">
+            Programme de formation
+          </button>
+        </section>
+        <!--RightPartImg-->
+        <div class="herosPart__img">
+          <div class="herosPart__img--img">
             <img
               src="../images/annie-spratt-sggw4-qDD54-unsplash 1.png"
               alt="imgUnknow"
-              class="w-full"
             />
           </div>
-        </section>
+        </div>
         <!--BottomPartIcons-->
-        <section>
-          <!--Icons-->
-          <ul class="flex flex-wrap justify-center gap-[4rem] lg:gap-[6rem]">
+        <!--Icons-->
+        <div class="herosPart__bottomIcons">
+          <ul class="herosPart__bottomIcons--icons">
             <li>
               <img src="#" alt="item" class="icon" />
             </li>
@@ -141,18 +137,21 @@
             </li>
             <li>
               <img src="#" alt="item" class="icon" />
-            </li>
-            <!--Text-->
-            <li>
-              <h3 class="heading_3 light">320+</h3>
-              <p class="text-[1.6rem] font-bold">étudiants</p>
-            </li>
-            <li>
-              <h3 class="heading_3">15+</h3>
-              <p class="text-[1.6rem] font-bold">écoles</p>
             </li>
           </ul>
-        </section>
+          <div class="herosPart__bottomIcons--text">
+            <div>
+              <h3>320+</h3>
+              <p>étudiants</p>
+            </div>
+            <div>
+              <h3>15+</h3>
+              <p>écoles</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Text-->
       </article>
 
       <!--OnlineCoursesGallery-->
@@ -206,7 +205,7 @@
         <!--Gallery-->
         <section class="card_wrapper_grid mb-[6rem] lg:mb-[10rem]">
           <!--Card-->
-          <div class="card card_white">
+          <a href="./companyCourseExemple.html" class="card card_white">
             <div>
               <h3>Apprenez les bases de <span>Réact</span></h3>
               <p>
@@ -218,7 +217,7 @@
               <p>10 cours</p>
               <img src="../images/triple_chevrons.png" alt="svgDeco" />
             </div>
-          </div>
+          </a>
           <div class="card card_white">
             <div>
               <h3>Java</h3>
@@ -305,11 +304,11 @@
     </main>
 
     <!--Footer-->
-    <footer class="h-[300px] background_dark relative pb-[4rem]">
+    <footer class="h-[300px] background_dark relative pb-[4rem] -mt-[1px]">
       <img
         src="../images/background_footer.png"
         alt="fond deco"
-        class="w-full absolute bottom-0 z-0 hidden lg:block"
+        class="h-full object-cover lg:w-full absolute bottom-0 z-0 lg:block"
       />
 
       <section

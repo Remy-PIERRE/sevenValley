@@ -13,9 +13,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../../dist/style.css" />
-    <title>Log In</title>
+    <title>Cours en ligne</title>
     <meta name="description" content="###" />
   </head>
+
   <body>
     <!--Header-->
     <header
@@ -47,7 +48,7 @@
           </li>
         </ul>
         <!--NavIcons-->
-        <div class="flex gap-[2rem] items-center dark hidden">
+        <div class="flex gap-[2rem] items-center dark">
           <i class="fa-solid fa-magnifying-glass text-[2rem]"></i>
           <a href="./logIn.html"
             ><button class="btn_header btn_dark">Se connecter</button></a
@@ -89,62 +90,131 @@
     </header>
 
     <main>
-      <article class="herosPart">
+      <!--herosPart-->
+      <section class="herosPart">
+        <!--textPart-->
         <div class="herosPart__text">
-          <!--title-->
           <div class="herosPart__text--title">
-            <h1>Connexion<span class="green_point">.</span></h1>
+            <h1>Les bases de vue.js<span class="green_point">.</span></h1>
+            <h2>Cours en ligne</h2>
           </div>
-          <!--Form-->
-          <form action="#" class="logForm">
-            <!--EmailInput-->
-            <div>
-              <label for="email"></label>
-              <input type="text" name="email" id="email" placeholder="E-mail" />
-            </div>
-            <!--PasswordInput-->
-            <div>
-              <label for="password"></label>
-              <input
-                type="text"
-                name="password"
-                id="password"
-                placeholder="Mot de passe"
-              />
-            </div>
-            <!--Submit-->
-            <button type="submit" class="btn_main btn_dark">
-              Se connecter
-            </button>
-          </form>
-          <!--SignUpLink-->
-          <section class="log__link">
+          <ul class="herosPart__tags">
+            <li><p>Débutant</p></li>
+            <li><p>12 cours</p></li>
+            <li><p>Javascript</p></li>
+            <li><p>HTML /CSS</p></li>
+            <li><p>******</p></li>
+          </ul>
+          <div class="herosPart__text-paraph">
             <p>
-              Vous n'avez pas encore de compte?
-              <a href="./signUp.html"
-                ><span class="underline green"> Inscrivez-vous </span> </a
-              ><span class="underline">gratuitement</span>
-              &nbsp;.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-          </section>
-        </div>
-        <!--image-->
-        <aside class="herosPart__img">
-          <div class="herosPart__img--img">
-            <img
-              src="../images/meysam-jarahkar-LI7jB1925j0-unsplash (1) 1.png"
-              alt="personne random"
-              class="h-[70vh]"
-            />
+            <p>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-        </aside>
-      </article>
+          <div class="herosPart__text--links">
+            <p>
+              <a href="./logIn.html" class="toLog">Connectez-vous</a> ou
+              <a href="./signUp.html" class="toLog">inscrivez-vous</a> pour
+              profiter pleinement des cours.
+            </p>
+          </div>
+        </div>
+        <!--iFramePart-->
+        <div class="herosPart__img">
+          <div class="herosPart__img--img">
+            <!-- <iframe src="0" frameborder="0"></iframe> -->
+            <img src="../images/image 33.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--TablePart-->
+      <section class="courseTable resume">
+        <!--filters-->
+        <div class="filters grey">
+          <div>
+            <label for="level">Niveau:</label
+            ><select name="level" id="level">
+              <option value="tous">Tous</option>
+              <option value="#">#</option>
+            </select>
+          </div>
+          <div>
+            <label for="theme">Thème:</label
+            ><select name="theme" id="theme">
+              <option value="tous">Tous</option>
+              <option value="#">#</option>
+            </select>
+          </div>
+        </div>
+        <!--table-->
+        <table>
+          <tr class="done">
+            <td></td>
+            <td>1</td>
+            <td>La syntaxe de Javascript</td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr class="done">
+            <td></td>
+            <td>2</td>
+            <td>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+              id.
+            </td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr class="done">
+            <td></td>
+            <td>3</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr class="active">
+            <td></td>
+            <td>4</td>
+            <td>
+              <a href="./courseExemple.html">Lorem ipsum dolor sit amet.</a>
+            </td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>5</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>6</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>12h</td>
+            <td><button>10€</button></td>
+          </tr>
+        </table>
+      </section>
+
+      <!--linksOtherCourses-->
+      <section class="courses__bottomLinks">
+        <div>
+          <img src="../images/signe_cours.png" alt="" />
+          <a href="">Toutes les formations</a>
+        </div>
+        <div>
+          <img src="../images/signe_cours.png" alt="" />
+          <a href="">Les cours en ligne</a>
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
-    <footer
-      class="h-[300px] background_grey relative pb-[4rem] -mt-[24px] lg:-mt-[40px]"
-    >
+    <footer class="h-[300px] background_white relative pb-[4rem] -mt-[1px]">
       <img
         src="../images/background_footer.png"
         alt="fond deco"

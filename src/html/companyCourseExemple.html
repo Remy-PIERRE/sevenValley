@@ -13,9 +13,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../../dist/style.css" />
-    <title>Log In</title>
+    <title>Cours en ligne</title>
     <meta name="description" content="###" />
   </head>
+
   <body>
     <!--Header-->
     <header
@@ -47,7 +48,7 @@
           </li>
         </ul>
         <!--NavIcons-->
-        <div class="flex gap-[2rem] items-center dark hidden">
+        <div class="flex gap-[2rem] items-center dark">
           <i class="fa-solid fa-magnifying-glass text-[2rem]"></i>
           <a href="./logIn.html"
             ><button class="btn_header btn_dark">Se connecter</button></a
@@ -89,62 +90,104 @@
     </header>
 
     <main>
-      <article class="herosPart">
+      <!--herosPart-->
+      <section class="herosPart">
+        <!--textPart-->
         <div class="herosPart__text">
-          <!--title-->
           <div class="herosPart__text--title">
-            <h1>Connexion<span class="green_point">.</span></h1>
+            <h1>
+              Formation javascript débutant<span class="green_point">.</span>
+            </h1>
+            <h2>Pour école et Entreprises</h2>
           </div>
-          <!--Form-->
-          <form action="#" class="logForm">
-            <!--EmailInput-->
-            <div>
-              <label for="email"></label>
-              <input type="text" name="email" id="email" placeholder="E-mail" />
-            </div>
-            <!--PasswordInput-->
-            <div>
-              <label for="password"></label>
-              <input
-                type="text"
-                name="password"
-                id="password"
-                placeholder="Mot de passe"
-              />
-            </div>
-            <!--Submit-->
-            <button type="submit" class="btn_main btn_dark">
-              Se connecter
-            </button>
-          </form>
-          <!--SignUpLink-->
-          <section class="log__link">
+          <ul class="herosPart__tags">
+            <li><p>4 jours</p></li>
+            <li><p>Présentiel</p></li>
+            <li><p>6000€</p></li>
+          </ul>
+          <div class="herosPart__text-paraph">
             <p>
-              Vous n'avez pas encore de compte?
-              <a href="./signUp.html"
-                ><span class="underline green"> Inscrivez-vous </span> </a
-              ><span class="underline">gratuitement</span>
-              &nbsp;.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-          </section>
+            <p>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="herosPart__text--links">
+            <button class="btn_main btn_dark">Demander un devis</button>
+          </div>
         </div>
-        <!--image-->
-        <aside class="herosPart__img">
-          <div class="herosPart__img--img">
+        <!--iFramePart-->
+        <div class="herosPart__img">
+          <div class="herosPart__img--iframe">
+            <!-- <iframe src="0" frameborder="0"></iframe> -->
             <img
-              src="../images/meysam-jarahkar-LI7jB1925j0-unsplash (1) 1.png"
-              alt="personne random"
-              class="h-[70vh]"
+              src="../images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash 1.png"
+              alt=""
             />
           </div>
-        </aside>
-      </article>
+          <div class="herosPart__text--links">
+            <a href="#">Voir toutes les formations</a>
+            <a href="#">Voir les cours en ligne</a>
+          </div>
+        </div>
+      </section>
+
+      <!--courseDetailsPart-->
+      <section class="compCourseDetails">
+        <div>
+          <h3 class="desc_h1 dark">PR&Eacute;REQUIS</h3>
+          <p>Aucun prérequis nécessaire pour cette formation.</p>
+        </div>
+        <div>
+          <h3>PUBLIC CONCERN&Eacute;</h3>
+          <p>
+            Donec quis magna vulputate, vehicula massa sit amet, viverra odio.
+            Nam tristique eu diam et pellentesque. Nam vitae cursus ex, at
+            gravida erat. Sed vel leo nec augue tempor ornare non ac odio.
+            Nullam non massa sit amet ipsum ultricies rhoncus.
+          </p>
+        </div>
+        <div>
+          <h3>FORMATION xxxxx</h3>
+          <div>
+            <p>nombre de jours : xxx</p>
+            <p>Prix: 2000 €</p>
+          </div>
+          <div>
+            <p>Durée: 2 jours</p>
+          </div>
+          <div>
+            <p>Nombre maximum de participants</p>
+            <p>xxxxx</p>
+          </div>
+          <div><p>Demander un devis</p></div>
+        </div>
+        <div>
+          <h3>LES OBJECTIFS DE LA FORMATION</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+            tempora unde vitae corrupti modi? A excepturi dolorem eveniet,
+            perferendis corporis officiis et amet animi laudantium tempora?
+            Ratione fuga aut mollitia.
+          </p>
+        </div>
+      </section>
+
+      <!--linksOtherCourses-->
+      <section class="compCourseLinks">
+        <div>
+          <img src="../images/chevron_gauche.png" alt="" />
+          <a href="#">Formation précédente</a>
+        </div>
+        <div>
+          <a href="#">Formation suivante</a>
+          <img src="../images/chevron_droite.png" alt="" />
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
-    <footer
-      class="h-[300px] background_grey relative pb-[4rem] -mt-[24px] lg:-mt-[40px]"
-    >
+    <footer class="h-[300px] background_white relative pb-[4rem] -mt-[1px]">
       <img
         src="../images/background_footer.png"
         alt="fond deco"

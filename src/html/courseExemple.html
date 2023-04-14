@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/90e8e7ef0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../dist/style.css" />
+    <title>Cours en ligne</title>
+    <meta name="description" content="###" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <header
+      class="max-w-[1460px] w-full h-[100px] mx-auto lg:my-[3rem] px-[30px] flex justify-between lg:justify-start items-center lg:items-end"
+    >
+      <a
+        href="../../index.html"
+        class="relative transform translate-y-[3px] lg:-translate-y-[10px]"
+      >
+        <img src="../images/logo.png" alt="logo seven valley" />
+      </a>
+      <!--DesktopNav-->
+      <nav class="pl-[4rem] hidden lg:flex grow justify-between">
+        <!--NavLinks-->
+        <ul class="flex items-center gap-[2rem] navLinks dark">
+          <li>
+            <a href="./companyCourses.html">
+              Formations Entreprises / Écoles
+            </a>
+          </li>
+          <li><a href="./onlineCourse.html">Cours en ligne</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <label for="lang" class="hidden">Langue</label>
+            <select name="lang" id="lang">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+        </ul>
+        <!--NavIcons-->
+        <div class="flex gap-[2rem] items-center dark">
+          <i class="fa-solid fa-magnifying-glass text-[2rem]"></i>
+          <a href="./logIn.html"
+            ><button class="btn_header btn_dark">Se connecter</button></a
+          >
+        </div>
+      </nav>
+
+      <!--HamburgerIcon-->
+      <div class="lg:hidden" id="hamburgerMenuIcon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--ResponsiveNav-->
+      <nav class="hidden responsive_navBar" id="responsiveNavBar">
+        <div class="responsive_navBar_wrapper">
+          <ul>
+            <li><a href="../../index.html"> Accueil </a></li>
+            <li>
+              <a href="./companyCourses.html">
+                Formations Entreprises / Écoles
+              </a>
+            </li>
+            <li><a href="./onlineCourse.html">Cours en ligne</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="responsive_navBar_lastLink">
+              <a href="./logIn.html">Connexion</a>
+            </li>
+          </ul>
+          <div class="responsive_navBar_lang">
+            <label for="lang">Langue</label>
+            <select name="lang" id="lang">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="course">
+      <!--coursePart-->
+      <article>
+        <!--courseHeader-->
+        <section class="herosPart">
+          <div class="herosPart__text">
+            <!--title-->
+            <div class="herosPart__text--title">
+              <h1>4 - Titre - Mauris augue magna, pretium in pharetra non</h1>
+              <h2>Cours en ligne</h2>
+            </div>
+            <!--tags-->
+            <ul class="herosPart__tags">
+              <li><p>Débutant</p></li>
+              <li><p>12 cours</p></li>
+              <li><p>Javascript</p></li>
+              <li><p>HTML /CSS</p></li>
+              <li><p>******</p></li>
+            </ul>
+            <!--description-->
+            <div class="herosPart__text-paraph">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <!--links-->
+            <div class="herosPart__text--links">
+              <div>
+                <img src="../images/githubIcon_px.png" alt="" />
+                <a href="#">Git hub du cours</a>
+              </div>
+              <div>
+                <img src="../images/barre_double_h_px.png" alt="" />
+                <a href="#">Accéder à la page</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--course-->
+        <section class="courseText">
+          <div class="courseText__imgWrapper">
+            <img src="#" alt="" />
+          </div>
+          <div class="courseText__paraph">
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt.
+            </p>
+            <p>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit, sed quia non numquam eius modi
+              tempora incidunt ut labore et dolore magnam aliquam quaerat
+              voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+              consequatur? Quis autem vel eum iure reprehenderit qui in ea
+              voluptate velit esse quam nihil molestiae consequatur, vel illum
+              qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+          </div>
+          <div class="courseText__imgWrapper">
+            <img src="#" alt="" />
+          </div>
+        </section>
+
+        <!--links-->
+        <section class="courses__bottomLinks">
+          <div>
+            <img src="../images/chevron_gauche.png" alt="" />
+            <a href="#"> Étape précédente </a>
+          </div>
+          <div>
+            <a href="#"> Étape suivante </a>
+            <img src="../images/chevron_droite.png" alt="" />
+          </div>
+        </section>
+      </article>
+
+      <!--courseMap-->
+      <aside class="courseTable">
+        <!--filters-->
+        <div class="filters grey">
+          <div>
+            <label for="level">Niveau:</label
+            ><select name="level" id="level">
+              <option value="tous">Tous</option>
+              <option value="#">#</option>
+            </select>
+          </div>
+          <div>
+            <label for="theme">Thème:</label
+            ><select name="theme" id="theme">
+              <option value="tous">Tous</option>
+              <option value="#">#</option>
+            </select>
+          </div>
+        </div>
+        <!--table-->
+        <table>
+          <tr class="done">
+            <td></td>
+            <td>1</td>
+            <td>La syntaxe de Javascript</td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr class="done">
+            <td></td>
+            <td>2</td>
+            <td>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+              id.
+            </td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr class="done">
+            <td></td>
+            <td>3</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr class="active">
+            <td></td>
+            <td>4</td>
+            <td>
+              <a href="./courseExemple.html">Lorem ipsum dolor sit amet.</a>
+            </td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>5</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>12h</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>6</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>12h</td>
+            <td><button>10€</button></td>
+          </tr>
+        </table>
+      </aside>
+    </main>
+
+    <!--Footer-->
+    <footer class="h-[300px] background_white relative pb-[4rem] -mt-[1px]">
+      <img
+        src="../images/background_footer.png"
+        alt="fond deco"
+        class="h-full object-cover lg:w-full absolute bottom-0 z-0 lg:block"
+      />
+
+      <section
+        class="w-full px-[2rem] lg:px-[12rem] absolute bottom-[4rem] z-10"
+      >
+        <div class="flex justify-center lg:justify-start gap-[2rem] mb-[6rem]">
+          <i class="fa-brands fa-github-alt text-[3rem]"></i>
+          <i class="fa-brands fa-linkedin-in text-[3rem]"></i>
+          <i class="fa-brands fa-twitter text-[3rem]"></i>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row gap-[2rem] items-center justify-between footer-text"
+        >
+          <p>&copy; Seven valley - 2022 tous les droits réservés</p>
+          <a href="#">Mentions légales et politique de confidentialité</a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>
