@@ -91,49 +91,46 @@
 
     <main>
       <!--HeroPart-->
-      <article class="flex flex-col items-center py-[6rem] lg:py-[10rem]">
-        <!--Container-->
-        <section class="flex mb-[4rem] lg:mb-[8rem]">
-          <!--LeftPart-Text-->
-          <section class="lg:w-1/2">
-            <!--Title-->
-            <div class="mb-[2rem] text-center lg:text-left">
-              <h1 class="heading_1 dark mb-[2rem]">Cours en ligne</h1>
-              <h2 class="desc_h1 dark">XXXXXXXXX</h2>
-            </div>
-            <!--Text-->
-            <div class="paraph_h1 grey mb-[4rem] text-center lg:text-left">
-              <p class="mb-[2rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                tenetur unde deserunt nobis atque eos consectetur iure dicta
-                distinctio. Possimus!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis, iste? Error eum debitis sint non, pariatur harum,
-                temporibus nam ipsam culpa vero deleniti. Beatae asperiores
-                provident vero suscipit aspernatur nisi enim, aliquid et vel
-                ipsam quas veritatis labore natus aliquam.
-              </p>
-            </div>
-            <!--CallToAction-->
-            <button class="btn_main btn_dark mx-auto block lg:mx-0">
-              xxxxx
-            </button>
-          </section>
-          <!--RightPartImg-->
-          <div class="w-1/2 hidden lg:block">
+      <article class="herosPart">
+        <!--LeftPart-Text-->
+        <section class="herosPart__text">
+          <!--Title-->
+          <div class="herosPart__text--title">
+            <h1>Cours en ligne</h1>
+            <h2>XXXXXXXXX</h2>
+          </div>
+          <!--Text-->
+          <div class="herosPart__text-paraph">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              tenetur unde deserunt nobis atque eos consectetur iure dicta
+              distinctio. Possimus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, iste? Error eum debitis sint non, pariatur harum,
+              temporibus nam ipsam culpa vero deleniti. Beatae asperiores
+              provident vero suscipit aspernatur nisi enim, aliquid et vel ipsam
+              quas veritatis labore natus aliquam.
+            </p>
+          </div>
+          <!--CallToAction-->
+          <button class="btn_main btn_dark mx-auto block lg:mx-0">xxxxx</button>
+        </section>
+        <!--RightPartImg-->
+        <div class="herosPart__img">
+          <div class="herosPart__img--img">
             <img
               src="../images/nicole-wolf-CZ9AjMGKIFI-unsplash 1.png"
               alt="imgUnknow"
-              class="w-full"
             />
           </div>
-        </section>
+        </div>
+
         <!--BottomPartIcons-->
-        <section>
+        <section class="herosPart__bottomIcons">
           <!--Icons-->
-          <ul class="flex flex-wrap justify-center gap-[4rem] lg:gap-[6rem]">
+          <ul class="herosPart__bottomIcons--icons">
             <li>
               <img src="#" alt="item" class="icon" />
             </li>
@@ -145,54 +142,50 @@
             </li>
             <li>
               <img src="#" alt="item" class="icon" />
-            </li>
-            <!--Text-->
-            <li>
-              <h3 class="heading_3 light">320+</h3>
-              <p class="text-[1.6rem] font-bold">étudiants</p>
-            </li>
-            <li>
-              <h3 class="heading_3">15+</h3>
-              <p class="text-[1.6rem] font-bold">écoles</p>
             </li>
           </ul>
+          <!--Text-->
+          <div class="herosPart__bottomIcons--text">
+            <div>
+              <h3>320+</h3>
+              <p>étudiants</p>
+            </div>
+            <div>
+              <h3>15+</h3>
+              <p>écoles</p>
+            </div>
+          </div>
         </section>
       </article>
 
       <!--OnlineCoursesGallery-->
-      <article class="background_dark py-[4rem] lg:py-[8rem]">
-        <!--Header-->
-        <section>
-          <!--Title-->
-          <div class="mb-[2rem] lg:mb-[4rem]">
-            <div class="flex items-end">
+      <article class="cardsPart__wrapper bg-dark">
+        <section class="cardsPart__textWrapper">
+          <div class="cardsPart__titleWrapper">
+            <div class="cardsPart__title">
               <img
                 src="../images/chevron_bas_droite_white.png"
                 alt="icon chevron blanc"
                 class="mr-[2rem] relative transform -translate-y-[38px] hidden lg:block"
               />
-              <h2 class="heading_2 white mb-[2rem] text-center lg:text-left">
-                Liste des cours en ligne
-              </h2>
+              <h2>Liste des cours en ligne</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                aliquid quae, vero harum iure impedit! Provident unde reiciendis
+                voluptatibus eaque?
+              </p>
             </div>
-            <p class="desc_h2 white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              aliquid quae, vero harum iure impedit! Provident unde reiciendis
-              voluptatibus eaque?
-            </p>
+            <div class="cardsPart__paraph">
+              <p class="paraph_h2 white mb-[4rem] lg:mb-[8rem]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                corrupti delectus. Voluptates dignissimos sunt mollitia. Quas
+                magnam ratione error nisi, veritatis, beatae accusantium
+                distinctio, dignissimos facilis quo autem amet numquam.
+              </p>
+            </div>
           </div>
-          <!--Text-->
-          <p class="paraph_h2 white mb-[4rem] lg:mb-[8rem]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-            corrupti delectus. Voluptates dignissimos sunt mollitia. Quas magnam
-            ratione error nisi, veritatis, beatae accusantium distinctio,
-            dignissimos facilis quo autem amet numquam.
-          </p>
           <!--Filters-->
-          <div
-            class="flex flex-col lg:flex-row gap-[2rem] lg:gap-[10rem] items-center desc_h1 white mb-[4rem] lg:mb-[8rem]"
-          >
-            <!--LevelFilter-->
+          <div class="filters">
             <div>
               <label for="level" class="mr-[2rem]">Niveau</label>
               <select name="level" id="level" class="background_trans">
@@ -200,7 +193,6 @@
                 <option value="#">#</option>
               </select>
             </div>
-            <!--ThemeFilter-->
             <div>
               <label for="theme" class="mr-[2rem]">Thème</label>
               <select name="theme" id="theme" class="background_trans">
@@ -211,7 +203,7 @@
           </div>
         </section>
         <!--Gallery-->
-        <section class="card_wrapper_grid mb-[6rem] lg:mb-[10rem]">
+        <section class="cardsPart__cardsWrapper">
           <!--Card-->
           <a href="./courseResumeExemple.html" class="card card_white">
             <div>
@@ -298,7 +290,7 @@
           </div>
         </section>
         <!--PageSelection-->
-        <ul class="flex gap-[1rem] white justify-center text-[1.6rem]">
+        <ul class="cardsPart__footerLinks">
           <li>Précédente</li>
           <li><button>1</button></li>
           <li><button>2</button></li>

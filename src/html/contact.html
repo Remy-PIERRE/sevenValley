@@ -89,24 +89,22 @@
       </nav>
     </header>
 
-    <main class="">
+    <main>
       <!--ContactForm-->
-      <article class="my-[8rem]">
+      <article class="contact__wrapper">
         <!--Title-->
-        <section class="mb-[4rem] lg:mb-[8rem]">
-          <h1 class="heading_1 dark mb-[2rem] text-center lg:text-left">
-            Contact<span class="green_point">.</span>
-          </h1>
-          <p class="paraph_h1">
+        <section class="contact__title">
+          <h1>Contact<span class="green_point">.</span></h1>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. eiusmod
             tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </section>
         <!--Form-->
-        <form action="#" class="lg:w-3/5 form_contact black">
+        <form action="#" class="contact__form">
           <!--ObjectSelect-->
-          <div class="flex gap-[2rem]">
+          <div>
             <label for="object">Objet*</label
             ><select name="object" id="object">
               <option value="formation">
@@ -137,7 +135,7 @@
           </div>
           <!--MessageTextArea-->
           <div>
-            <label for="message">Message*</label
+            <label for="message" class="self-start">Message*</label
             ><textarea
               id="message"
               name="message"

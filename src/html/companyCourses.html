@@ -150,51 +150,40 @@
             </div>
           </div>
         </div>
-
-        <!--Text-->
       </article>
 
-      <!--OnlineCoursesGallery-->
-      <article class="background_dark py-[4rem] lg:py-[8rem]">
-        <!--Header-->
-        <section>
-          <!--Title-->
-          <div class="mb-[2rem] lg:mb-[4rem]">
-            <div class="flex items-end">
+      <article class="cardsPart__wrapper bg-dark">
+        <section class="cardsPart__textWrapper">
+          <div class="cardsPart__titleWrapper">
+            <div class="cardsPart__title">
               <img
                 src="../images/chevron_bas_droite_white.png"
                 alt="icon chevron blanc"
-                class="mr-[2rem] relative transform -translate-y-[38px] hidden lg:block"
               />
-              <h2 class="heading_2 white mb-[2rem] text-center lg:text-left">
-                Liste des formations données
-              </h2>
+              <h2>Liste des formations données</h2>
+              <p>
+                En présentiel, je me déplace partout en France. Je peux
+                également donner mes cours à distance en visioconférence.
+              </p>
             </div>
-            <p class="desc_h2 white">
-              En présentiel, je me déplace partout en France. Je peux également
-              donner mes cours à distance en visioconférence.
-            </p>
+            <div class="cardsPart__paraph">
+              <p>
+                N’hésitez pas à me <span>contacter</span>, ou à
+                <span>demander un devis</span>, je m’adapte à vos besoins.
+              </p>
+            </div>
           </div>
-          <!--Text-->
-          <p class="paraph_h2 white mb-[4rem] lg:mb-[8rem]">
-            N’hésitez pas à me <span>contacter</span>, ou à
-            <span>demander un devis</span>, je m’adapte à vos besoins.
-          </p>
           <!--Filters-->
-          <div
-            class="flex flex-col lg:flex-row gap-[2rem] lg:gap-[10rem] items-center desc_h1 white mb-[4rem] lg:mb-[8rem]"
-          >
-            <!--LevelFilter-->
+          <div class="filters">
             <div>
-              <label for="level" class="mr-[2rem]">Niveau</label>
+              <label for="level">Niveau</label>
               <select name="level" id="level" class="background_trans">
                 <option value="tous">Tous</option>
                 <option value="#">#</option>
               </select>
             </div>
-            <!--ThemeFilter-->
             <div>
-              <label for="theme" class="mr-[2rem]">Thème</label>
+              <label for="theme">Thème</label>
               <select name="theme" id="theme" class="background_trans">
                 <option value="tous">Tous</option>
                 <option value="#">#</option>
@@ -203,7 +192,7 @@
           </div>
         </section>
         <!--Gallery-->
-        <section class="card_wrapper_grid mb-[6rem] lg:mb-[10rem]">
+        <section class="cardsPart__cardsWrapper">
           <!--Card-->
           <a href="./companyCourseExemple.html" class="card card_white">
             <div>
@@ -290,7 +279,7 @@
           </div>
         </section>
         <!--PageSelection-->
-        <ul class="flex gap-[1rem] white justify-center text-[1.6rem]">
+        <ul class="cardsPart__footerLinks">
           <li>Précédente</li>
           <li><button>1</button></li>
           <li><button>2</button></li>

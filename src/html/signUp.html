@@ -88,68 +88,59 @@
       </nav>
     </header>
 
-    <main class="flex justify-between my-[4rem] lg:my-[8rem]">
+    <main>
       <!--LeftPart-->
-      <article class="lg:w-1/2 lg:pr-0">
-        <!--Title-->
-        <h1 class="heading_1 dark mb-[4rem] lg:mb-[8rem]">
-          Créer un compte<span class="green_point">.</span>
-        </h1>
-        <!--Form-->
-        <form action="#" class="flex flex-col gap-[4rem] mb-[8rem]">
-          <!--EmailInput-->
-          <div>
-            <label for="email"></label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              class="log_input"
-            />
+      <article class="herosPart">
+        <section class="herosPart__text">
+          <!--Title-->
+          <div class="herosPart__text--title">
+            <h1>Créer un compte<span class="green_point">.</span></h1>
           </div>
-          <!--PasswordInput-->
-          <div>
-            <label for="password"></label>
-            <input
-              type="text"
-              name="password"
-              id="password"
-              placeholder="Mot de passe"
-              class="log_input"
-            />
-          </div>
-          <!--Submit-->
-          <button
-            type="submit"
-            class="btn_main btn_dark self-start mt-[2rem] lg:mt-0 mx-auto lg:mx-0"
-          >
-            Se connecter
-          </button>
-        </form>
+          <!--Form-->
+          <form action="#" class="logForm">
+            <!--EmailInput-->
+            <div>
+              <label for="email"></label>
+              <input type="text" name="email" id="email" placeholder="E-mail" />
+            </div>
+            <!--PasswordInput-->
+            <div>
+              <label for="password"></label>
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="Mot de passe"
+              />
+            </div>
+            <!--Submit-->
+            <button type="submit" class="btn_main btn_dark">
+              Créer un compte
+            </button>
+          </form>
 
-        <!--LogInLink-->
-        <section>
-          <p class="paraph_h1">
-            Vous avez déjà un compte?
-            <a href="./logIn.html"
-              ><span class="underline green"> Connectez-vous </span> </a
-            ><span class="underline">simplement</span>
-            &nbsp;.
-          </p>
+          <!--LogInLink-->
+          <div class="log__link">
+            <p>
+              Vous avez déjà un compte?
+              <a href="./logIn.html"
+                ><span class="underline green"> Connectez-vous </span> </a
+              ><span class="underline">simplement</span>
+              &nbsp;.
+            </p>
+          </div>
+        </section>
+        <!--RightPart-->
+        <section class="herosPart__img">
+          <div class="herosPart__img--img">
+            <img
+              src="../images/toa-heftiba-O3ymvT7Wf9U-unsplash (1) 1.png"
+              alt="personne random"
+              class="h-[70vh]"
+            />
+          </div>
         </section>
       </article>
-
-      <!--RightPart-->
-      <aside class="hidden lg:block pr-[2rem]">
-        <div>
-          <img
-            src="../images/toa-heftiba-O3ymvT7Wf9U-unsplash (1) 1.png"
-            alt="personne random"
-            class="h-[70vh]"
-          />
-        </div>
-      </aside>
     </main>
 
     <!--Footer-->
