@@ -879,6 +879,11 @@ header {
   width: 100%;
   margin-bottom: 40px;
 }
+@media (min-width: 976px) {
+  .logForm {
+    padding-left: 0;
+  }
+}
 
 /* log link */
 .log__link {
@@ -1074,7 +1079,7 @@ header {
   .cardsPart__title img {
     display: block;
     position: relative;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   .cardsPart__title h2 {
     font-size: 4.6rem;
@@ -1187,8 +1192,8 @@ header {
   background: var(--color-bg-grey);
 }
 .presentation__imgWrapper {
-  margin-bottom: 24px;
   margin: auto;
+  margin-bottom: 24px;
 }
 .presentation__textWrapper {
   margin-bottom: 24px;
